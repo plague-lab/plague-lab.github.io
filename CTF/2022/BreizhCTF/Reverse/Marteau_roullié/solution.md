@@ -17,6 +17,8 @@ By C0000005 with the help of LNK0
 
 We must be REALLY carefull, i've already encrypted my whole machine in RSA-2048 during a CTF cause i was too sleepy. 
 
+password for the file : infected
+
 ## Reconnaissance 
 
 We got 2 files, one seems to be the ransomware, and the other is the important file that we most recover in order to get our precious flag.
