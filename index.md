@@ -23,4 +23,4 @@ Make the Scene great again, and free Internet.
 
 ## BreizhCTF - 2022 
 
-[Write Up Here !](./CTF/2022/BreizhCTF/Reverse/SecretApp/solution.md).
+[Write Up Here !](./CTF/2022/BreizhCTF/BreizhCTF.md).
