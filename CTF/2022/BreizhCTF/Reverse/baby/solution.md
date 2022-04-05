@@ -1,5 +1,8 @@
 # [BreizhCTF - 2022 ] Baby
 
+By C0000005
+
+
     Description:
     Le reverse c'est quand même vachement compliqué... ou pas ?
 
