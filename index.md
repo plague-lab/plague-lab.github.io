@@ -5,9 +5,22 @@ layout: default
 
 # Plague Lab
 
-We are a CTF Team whos focus on reversing challenges
+## Who we are ?
 
-## C0000005
+We are a collective whose main activity is retro engineering. In parallel we develop software in line with the ideas of cypherpunks. 
+We have at heart to share our knowledge. 
 
-I'm cute with my IDa
-### Header 3
+## Our objectives :
+
+Make the Scene great again, and free Internet.
+
+## Who are our members?
+
+* C0000005
+* LNK0
+* codePhunks
+
+
+## BreizhCTF - 2022 
+
+Write Up in comming, soonTM.
