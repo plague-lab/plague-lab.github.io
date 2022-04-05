@@ -16,9 +16,9 @@ Make the Scene great again, and free Internet.
 
 ## Who are our members?
 
-* C0000005
-* LNK0
-* codePhunks
+* LNK0, Prince Of The Heap
+* C0000005, Technoking
+* codePhunks, Coin Master
 
 
 ## BreizhCTF - 2022 
