@@ -8,8 +8,8 @@ The CTF was reallllyyyy cooolllll! Thanks to ESN'HACK & Organizers for this cool
 ### Reverse
 
 
-* [L’appli secrète du BreizhCTF](./CTF/2022/BreizhCTF/Reverse/SecretApp/solution.md).
-* [baby](./CTF/2022/BreizhCTF/Reverse/baby/solution.md).
+* [L’appli secrète du BreizhCTF](./Reverse/SecretApp/solution.md).
+* [baby](./Reverse/baby/solution.md).
 * [Marteau rouillé, néanmoins plutôt rapide](). In comming....
 
 ### Programming
