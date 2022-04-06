@@ -61,11 +61,11 @@ And we got the true main function. She looks like this:
 
 And it's more awfull than i would think, name of the function looks like some deep old elfic language. BUT, IDA recognize the name of the function and give it the true name of it.
 
-Below, we can see the start, and the declaration of some variable. We can also see, a Unix Socket, a buffer for the file path, the time at this instant, and a file instance being created. 
+Below, we can see the start, and the declaration of some variable. We can also see, a Unix Socket, a buffer for the file path, the time at this instant, and a file descritpor instance being created. 
 
 ```rust
 Unix::net::datagram // a sokcet 
-std::fs::File // File 
+std::fs::File // File descriptor
 std::path::PathBuf // path to a file
 std::time::Instant // time at this instant
 std::fs::OpenOption // open File
