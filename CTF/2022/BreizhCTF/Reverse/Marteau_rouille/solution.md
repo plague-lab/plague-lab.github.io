@@ -15,9 +15,9 @@ By C0000005 with the help of LNK0
     File : target_release_rustyHammer
            important.enc
 
-We must be REALLY carefull, i've already encrypted my whole machine in RSA-2048 during a CTF cause i was too sleepy. 
+I did not finish this one during the CTF Time, it was too intercent to go like nothing happened, and it was my first time doing some realy deep Rust reverse. So plese be gentle oni chann.
 
-password for the file : infected
+We must be REALLY carefull, i've already encrypted my whole machine in RSA-2048 during a CTF cause i was too sleepy. 
 
 ## Reconnaissance 
 
@@ -37,4 +37,23 @@ Let's start, usual stuff, lets go for a file.
 `target_release_rustyHammer: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=9755aa76eb54f28c0bb6c9db4685d603a6f46955, for GNU/Linux 4.4.0, with debug_info, not stripped`
 
 Well we are lucky, there is debug_info and binarry is not stripped. So let's go for IDA. In the first time. 
+
+What we must find in the binarry :
+    
+* Method of encryption
+* The algorithm
+* The key 
+* Where does it looks for file
+
+
+## Finding the method of encryption in all this Rust
+
+Once loaded in IDA, we got the "main" function. 
+
+![maiin?](main1.png).
+
+Let's decode what we see. We are at the start, we can see the `argc` and `argv` been moved around. 
+Then we can see that something called `rustyHammer4main' is loadedd. (LEA = Load Effective Addrress). I'm curious, let's go directly here. 
+
+
 
