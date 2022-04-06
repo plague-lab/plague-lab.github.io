@@ -15,9 +15,9 @@ By C0000005 with the help of LNK0
     File : target_release_rustyHammer
            important.enc
 
-I did not finish this one during the CTF Time, it was too intercent to go like nothing happened, and it was my first time doing some realy deep Rust reverse. So plese be gentle oni chann.
+I did not finish this challenge in the CTF Time, but it was too interesting, to act like nothing captured my eyes during the CTF.(And also at this time, i did not have a VM). It was my first time reversing some Rust. So, please be gentle onii chann UwU ! 
 
-We must be REALLY carefull, i've already encrypted my whole machine in RSA-2048 during a CTF cause i was too sleepy. 
+We must be REALLY carefull, i've already encrypted my whole machine in RSA-2048 during a CTF cause i was too sleepy and did not read the BIG warning. 
 
 ## Reconnaissance 
 
@@ -27,7 +27,7 @@ We got 2 files, one seems to be the ransomware, and the other is the important f
 Let's first, look a our important file. It looks like this :
 `?{??Ɠ?"^#??????^???ֳ??~9??Dz??⏎ `
 
-Well okay not helping.
+Well okay not helping. I did this in case we can do some plain text attack. Since we know the flag format. But it's was useless.
 
 
 Let's now look at the ransomware, i'm already scared cause i read Rust in the name, and even if Rust is a realy beautifull language, it's not fun to reverse, not fun at all.
@@ -46,14 +46,39 @@ What we must find in the binarry :
 * Where does it looks for file
 
 
-## Finding the method of encryption in all this Rust
+## Anlysing
 
 Once loaded in IDA, we got the "main" function. 
 
-![maiin?](main1.png).
+![maiin?](main1.png)
 
 Let's decode what we see. We are at the start, we can see the `argc` and `argv` been moved around. 
 Then we can see that something called `rustyHammer4main' is loadedd. (LEA = Load Effective Addrress). I'm curious, let's go directly here. 
 
+And we got the true main function. She looks like this:
 
+![rustyMain](rustyMain.png)
+
+And it's more awfull than i would think, name of the function looks like some deep old elfic language. BUT, IDA recognize the name of the function and give it the true name of it.
+
+Below, we can see the start, and the declaration of some variable. We can also see, a Unix Socket, a buffer for the file path, the time at this instant, and a file instance being created. 
+
+```rust
+Unix::net::datagram // a sokcet 
+std::fs::File // File 
+std::path::PathBuf // path to a file
+std::time::Instant // time at this instant
+std::fs::OpenOption // open File
+```
+
+![rustyMainVar](rustyMainVar.png)
+
+Now we can go to our beloved opcodes, and find what we want. 
+
+![mainOpcodes](mainopcode1.png)
+
+
+
+
+## Finding the method of encryption in all this Rust
 
