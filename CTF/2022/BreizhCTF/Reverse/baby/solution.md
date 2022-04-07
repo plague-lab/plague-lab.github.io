@@ -32,7 +32,7 @@ Since the file is named baby, it's must be an easy reverse, so it's i think usel
 
 Let's run strings on it and grep with the flag format. 
 
-`$ C0000005@linux ~> strings baby | grep "BZH`
+`$ C0000005@linux ~> strings baby | grep "BZH"`
 
 And the output is... The flag !! 
 
