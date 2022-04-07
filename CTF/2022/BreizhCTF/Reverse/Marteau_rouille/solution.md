@@ -61,15 +61,18 @@ And we got the true main function. She looks like this:
 
 And it's more awfull than i would think, name of the function looks like some deep old elfic language. BUT, IDA recognize the name of the function and give it the true name of it.
 
-Below, we can see the start, and the declaration of some variable. We can also see, a Unix Socket, a buffer for the file path, the time at this instant, and a file descritpor instance being created. 
+Below, we can see the start, and the declaration of some variable. We can also see, pointer to a Unix Socket, a buffer for the file path, the time at this instant, and a file descriptor instance being created. 
+
 
 ```rust
 Unix::net::datagram // a sokcet 
 std::fs::File // File descriptor
 std::path::PathBuf // path to a file
 std::time::Instant // time at this instant
-std::fs::OpenOption // open File
+std::fs::OpenOption // file descriptor option
 ```
+
+
 
 ![rustyMainVar](rustyMainVar.png)
 
@@ -77,8 +80,35 @@ Now we can go to our beloved opcodes, and find what we want.
 
 ![mainOpcodes](mainopcode1.png)
 
+On the image, we can see that the time at this instant is called. It's the first call. Then a strange debug function. I tried to google it but nothing show off.
 
+Then, the `print()` function is loaded and called. I can't determine what is printed, i guess it's somewhere in the data segement but no clue. In a debbuger i guess we can see what on the stack or heap. After, the `thread::sleep` function is loaded and called. 
+
+Latter i will launch a virutal machine to execute the code and look at what will be loaded on the heapd and stack.
+
+After this, there is a a repetition of sleep and print call. 
+
+With what is added to the thing printed, i think something like a decreasing counter is printed. Going from 9 to 0.  
+
+
+### File::Option::open 
+
+Opening a file in Rust looks like, this : 
+
+```rust
+use std::fs::File;
+
+let mut file = File::options()
+    .read(true)
+    .open(true)
+
+// Stackoverflow
+```
+And at the end of the instruction block we can see the different call like `read `and `open`. We are on the good way. But we still don't know what is encrypted, a directory or a path.
+
+![imgOpen+read](endBlock.png)
 
 
 ## Finding the method of encryption in all this Rust
 
+After the jump 
