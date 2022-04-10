@@ -14,19 +14,19 @@ We have at heart to share our knowledge.
 
 Make the Scene great again, and free Internet.
 
-## Who am i ?
+## Who are our members ?
 
-C0000005 aka deadc0de,I am a student with a passion for cybersecurity and computer science in general. I love opcodes. 
+* C0000005 aka deadc0de,I am a student with a passion for cybersecurity and computer science in general. I love opcodes. 
+  
+  If you need to contact me: 
+    * Tox:  C07E4A3D33EA773475BF8FC43DBAED6B82B7B23E3D88E7BA72EE848C1841A3406F1E1C0530F4
+    * mail: permabanXVIII@protonmail.com
 
-My only goal: to learn.
+* LNK0, i'm someone who try a lot of things, no real identity, I'm wandering in cyberspace... I love FPGA and lowlevel computing.
 
 
-If you need to contact me: 
 
-qTox:  C07E4A3D33EA773475BF8FC43DBAED6B82B7B23E3D88E7BA72EE848C1841A3406F1E1C0530F4
-
-mail: permabanXVIII@protonmail.com
-
+See you at the DEF CON
 
 ## BreizhCTF - 2022 
 
