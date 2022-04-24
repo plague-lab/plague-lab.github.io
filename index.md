@@ -12,7 +12,7 @@ We have at heart to share our knowledge.
 
 ## Our objectives :
 
-Make the Scene great again, and free Internet.
+Having fun.
 
 ## Who are our members ?
 
@@ -31,3 +31,10 @@ See you at the DEF CON
 ## BreizhCTF - 2022 
 
 [Write Up Here !](./CTF/2022/BreizhCTF/BreizhCTF.md).
+
+## Midnight Flag - 2022
+
+[Write Up Here !](./CTF/2022/MidnightFlagCTF/midnightflag.md).
+
+
+
