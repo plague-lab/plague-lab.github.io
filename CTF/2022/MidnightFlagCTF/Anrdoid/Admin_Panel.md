@@ -14,3 +14,7 @@ As usual, you can unzip it, since an .apk is a collection of compressed files. B
 We must find the mainActivity, since it's the default page loaded when you start an application, once we find it, we can start to look at the code and find the authentification process. 
 
 ![Arboresence](arb.png)
+
+By habit, we know that the code is located in the com file. This time the main activity is under the file LoginActivity, it is deduction since we must connect as indicated in the challenge description. (And we can see a onCreate).
+
+![com folder](2.png)
