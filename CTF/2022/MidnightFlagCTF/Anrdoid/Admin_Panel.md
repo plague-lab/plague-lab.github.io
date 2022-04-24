@@ -15,6 +15,7 @@ We must find the mainActivity, since it's the default page loaded when you start
 
 ![Arboresence](arb.png)
 
-By habit, we know that the code is located in the com file. This time the main activity is under the file LoginActivity, it is deduction since we must connect as indicated in the challenge description. (And we can see a onCreate).
+By habit, we know that the code is located in the com file. We can see two interseting folder, one named p006ui, and an other called data. I guess that the folder with UI is the User Interface code, so let's focus on tha data folder. 
 
 ![com folder](2.png)
+
