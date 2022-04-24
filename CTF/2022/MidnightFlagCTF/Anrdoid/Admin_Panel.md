@@ -13,4 +13,4 @@ As usual, you can unzip it, since an .apk is a collection of compressed files. B
 
 We must find the mainActivity, since it's the default page loaded when you start an application, once we find it, we can start to look at the code and find the authentification process. 
 
-[Arboresence](Capture d’écran_2022-04-24_21-16-11.png)
+[Arboresence](arb.png)
