@@ -5,11 +5,11 @@ Par contre c'est en français x)
 
 ### Hardware 
 
-* [I2CTOYOU]().
+* [I2CTOYOU](I2CTOYou.md).
 * 
 * [x-FACTOR 2/2](./X-FACTOR/X-Factor2-2.md). Je suis entrian de compléter le writeup.
 
 ### Misc 
 
-* [X-FACTOR 1/2](./X-FACTOR/X-Factor1-2.md)
+* [X-FACTOR 1/2](./X-FACTOR/X-factor1-2.md)
 * 
