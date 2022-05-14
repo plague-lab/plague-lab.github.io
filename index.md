@@ -36,5 +36,6 @@ See you at the DEF CON
 
 [Write Up Here !](./CTF/2022/MidnightFlagCTF/midnightflag.md).
 
-
+## FCSC - 2022 
+[Write Up Here !](./CTF/2022/FCSC/FCSC2022/Hardware/FCSC.md)
 
