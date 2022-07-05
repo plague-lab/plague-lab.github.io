@@ -124,7 +124,7 @@ int main(){
 
 ```
 
-And the our flag is printed:
+And the flag is printed:
 ```
 PWNME{l1nk3d_l1st_1n_m3m0ry}
 ```
