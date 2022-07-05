@@ -1,0 +1,46 @@
+body { 
+    background: url("cat.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+
+
+
+.clearfix {
+    margin-top: 60px;
+}
+
+.card-login {
+    background-color: #34568b;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #0C4786 !important;
+    border: none;
+    font-size: 20px;
+}
+
+.code-form {
+    font-size: 20px;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #860C35 !important;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+}
+
+.alert-success {
+    background-color: #0FA97D;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+}
