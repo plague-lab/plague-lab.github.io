@@ -78,7 +78,7 @@ The function is cleaned for u <3
 
 ![isFLag](t.png)
 
-So the function take two parameters, our imput and the address of Linked List. Then we iterate over the linked list, with two conditions, the end of our input ( the apparition of a C-string end : `\0`) and the existence of a next node.
+So the function take two parameters, our imput and the address of Linked List. Then we iterate over the linked list, with two conditions, the end of our input ( The 0 at the end also called the NUL terminator. It denotes the end of a C-string.) and the existence of a next node.
 During the iteration a `if()` verify if that our input to which we subtract 64 is equal to the value n of the linked list.
 
 The solution is a simple, add 64 to the value from the linked list.
@@ -91,7 +91,7 @@ for (int i = 0; i < size; i++)
 }
 ```
 
-## 3 - FLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG
+## 3 - FLAAAAAAAAAAAAAAAAAAAAG
 
 
 Let's put everything in form, and here is our solver (commusim is good )
