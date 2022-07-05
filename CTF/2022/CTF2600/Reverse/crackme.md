@@ -45,7 +45,7 @@ Let's deeeeep dive in this function. The function is cleaned for u <3 cause dam 
 
 ![insert](node-rew.png)
 
-Firstly we iterate over the linked list to find the end of it. Its the for loop, that we can translate as `while(last->next == 0)`
+Firstly we iterate over the linked list to find the end of it. Its the for loop, that we can translate as `while(last->next != 0)`
 
 Then a malloc for a new node inserted at the end. 
 
