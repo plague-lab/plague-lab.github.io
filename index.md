@@ -5,16 +5,6 @@ layout: default
 
 # Plague Lab
 
-## Who we are ?
-
-We are a collective whose main activity is retro engineering. In parallel we develop software in line with the ideas of cypherpunks. 
-We have at heart to share our knowledge. 
-
-## Our objectives :
-
-Having fun.
-
-##
 
 
 
