@@ -1,7 +1,13 @@
-# BreizhCTF - Breton 
+# BreizhCTF - Breton - Reverse
 
 
-The binary is a classic cracke where we iterate over `argv[1]`
+The binary is a classic crack-me where we iterate over `argv[1]`. As we can see on the CFG, there is a lot of condition.
+
+![](Screenshot_20230319_184125.png)
+
+
+
+`Revolte()` is an exit function with a `print`, we can see that the input must be 39 char long.
 
 Cf, the start of the binary : 
 ```
@@ -15,13 +21,11 @@ if ( argc != 2 )
 
 ```
 
-`Revolte()` is an exit function with a `print`, we can see that the input must be 39 char long.
 
-![](Screenshot_20230319_184125.png)
 
 ## Leveraging SymExec & SAT Solver
 
-Since it would be long to write the script with z3 to solv. We can use a SymExec engine such as Triton or Angr, i've decided to go with Angr since Triton needs a lot of code. Here is the solv script. We just give him the address we want to reach(Here a print)
+Since it would be long to write the script with z3 to solv. We can use a SymExec engine such as Triton or Angr, i've decided to go with Angr since Triton needs a lot of code. Here is the solution script. We just give him the address we want to reach(Here a print)
 
 
 ```python
