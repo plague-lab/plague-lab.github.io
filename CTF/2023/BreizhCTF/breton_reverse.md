@@ -15,7 +15,7 @@ if ( argc != 2 )
 
 ```
 
-`Revolte()` is an exit function with a `print`, we cann se that the input must be 39 char.
+`Revolte()` is an exit function with a `print`, we can see that the input must be 39 char long.
 
 ![](Screenshot_20230319_184125.png)
 
